@@ -4,10 +4,197 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Spotify</title>
+    <!-- style -->
     <link rel="stylesheet" href="style.css">
+    <!-- responseve -->
+    <link rel="stylesheet" href="responsive.css">
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <main >
+        <div class="container">
+            <!-- sidebar -->
+            <div class="sidebar">
+                <div class="container-side">
+                    <div class="top">
+                        <div class="logo">
+                            <img src="./img/logo.svg" alt="">
+                        </div>
+                        <div class="playlist">
+                            <ul>
+                                <li><img src="./img/home.svg" alt=""><a href="#">Home</a></li>
+                                <li><img src="./img/search.svg" alt=""><a href="#">Cerca</a></li>
+                                <li><img src="./img/libreria.svg" alt=""><a href="#"> la tua libreria</a></li>
+                            </ul>
+                            <ul>
+                                <li><h4>Playlist</h4></li>
+                                <li><a href="#"><span>+</span>Crea Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                                <li><a href="#">Nome Playlist</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>    
+                <div class="account">
+                    <ul id="special">
+                        <li><img src="./img/download.svg" alt=""><a href="#">Installa app</a></li>
+                    </ul>
+                    <ul>
+                        <li><img src="./img/profile.svg" alt=""><a href="#">John Doe</a></li>
+                    </ul>
+                </div>    
+                
+            </div>
+            <!-- content -->
+            <div class="content">
+                <header>
+                    
+                </header>
+                <menu>
+                    <ul>
+                        <li><a href="#">In Evidenza</a></li>
+                        <li><a href="#">Podcast</a></li>
+                        <li><a href="#">Classifiche</a></li>
+                        <li><a href="#">Generi e mood</a></li>
+                        <li><a href="#">Nuove uscite</a></li>
+                        <li><a href="#">Scopri</a></li>
+                    </ul>
+                </menu>
+                <!-- section recently played -->
+                <section class="recently-played">
+                    <h2>Recently played</h2>
+                    <div class="container-cella">
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/metal_lifting.jpg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Heavy Metal
+                            </h3>
+                            <p class="subtitle">
+                                Subtitle
+                            </p>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/stranger.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)
+                            </h3>
+                            <p class="subtitle">
+                                kyle Dixon & Michael Stein
+                            </p>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/aquietplace.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                A quiet place
+                            </h3>
+                            <p class="subtitle">
+                                Subtitle
+                            </p>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/split.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Split
+                            </h3>
+                            <p class="subtitle">
+                                Subtitle
+                            </p>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/cure.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                A cure for wellness
+                            </h3>
+                            <p class="subtitle">
+                                Subtitle
+                            </p>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/sinister.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Sinister
+                            </h3>
+                            <p class="subtitle">
+                                Subtitle
+                            </p>
+                        </div> 
+                    </div>
+                </section>
+                <!-- section creato per... -->
+                <section class="creato-per">
+                    <h2>Creato per John Doe</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="container-cella">
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/radar.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Release Radar
+                            </h3>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/mixdaily.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Daily Mix 1
+                            </h3>
+                        </div> 
+                </section>
+                <!-- section artisti... -->
+                <section class="artisti">
+                    <h2>Artisti più popolari</h2>
+                    <p>Più ascolti, più accurati saranno i suggerimenti</p>
+                    <div class="container-cella">
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/youg.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Lana del Ray
+                            </h3>
+                        </div> 
+                        <div class="cella">
+                            <div class="immagine">
+                                <img src="./img/einaudi.jpeg" alt="">
+                            </div>
+                            <h3 class="title">
+                                Ludovico Einaudi
+                            </h3>
+                        </div> 
+                </section>
+            </div>
+        </div>
+    </main>
+   <!--  footer -->
+    <footer>
+
+    </footer>
     
 </body>
 </html>
