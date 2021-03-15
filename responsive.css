@@ -32,7 +32,8 @@
             margin-left: 5px;
         }
         footer .center i:nth-child(3){
-            font-size: 16px;
+            font-size: 20px;
+            vertical-align: middle;
         }
         
         footer .left p:first-child{
@@ -49,6 +50,10 @@
         }
         .line{
             width: 140px;
+        }
+        footer .right .line{
+            width: 60px;
+            margin-right: 0;
         }
         
 }
@@ -105,9 +110,14 @@
         color:white;
         font-size: 16px;
         margin-left: 10px;
+        vertical-align: middle;
     }
     footer .center i:nth-child(3){
-        font-size: 20px;
+        font-size: 24px;
+    }
+    footer .right .line{
+        width: 100px;
+        margin-right: 0;
     }
 }
 
