@@ -9,9 +9,22 @@
         .cella{
             width: calc(100%/2);
         }
+        .hide{
+            display: none;
+        }
+        
 }
 /* s */
 @media screen and (min-width: 601px){
+    .sidebar {
+        width: 300px;
+    }
+    .hide{
+        display: block;
+    }
+    .hide1{
+        display: none;
+    }
     
 }
     
@@ -22,7 +35,8 @@
     .cella{
         width: calc(100%/4);
     }
-   
+    
+    
 }
 
 /* lg */

@@ -14,6 +14,9 @@
     <!-- font -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600;700&display=swap" rel="stylesheet">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <main >
@@ -23,17 +26,18 @@
                 <div class="container-side">
                     <div class="top">
                         <div class="logo">
-                            <img src="./img/logo.svg" alt="">
+                            <img  class="hide" src="./img/logo.svg" alt="">
+                            <img  class="hide1"src="./img/logo-small.svg" alt="">
                         </div>
                         <div class="playlist">
                             <ul>
-                                <li><img src="./img/home.svg" alt=""><a href="#">Home</a></li>
-                                <li><img src="./img/search.svg" alt=""><a href="#">Cerca</a></li>
-                                <li><img src="./img/libreria.svg" alt=""><a href="#"> la tua libreria</a></li>
+                                <li><a href="#"><img src="./img/home.svg" alt=""></a><a class="hide" href="#">Home</a></li>
+                                <li><a href="#"><img src="./img/search.svg" alt=""></a><a class="hide" href="#">Cerca</a></li>
+                                <li><a href="#"><img src="./img/libreria.svg" alt=""></a><a class="hide" href="#"> la tua libreria</a></li>
                             </ul>
-                            <ul>
+                            <ul class="hide">
                                 <li><h4>Playlist</h4></li>
-                                <li><a href="#"><span>+</span>Crea Playlist</a></li>
+                                <li><span>+</span><a href="#">Crea Playlist</a></li>
                                 <li><a href="#">Nome Playlist</a></li>
                                 <li><a href="#">Nome Playlist</a></li>
                                 <li><a href="#">Nome Playlist</a></li>
@@ -49,10 +53,10 @@
                 </div>    
                 <div class="account">
                     <ul id="special">
-                        <li><img src="./img/download.svg" alt=""><a href="#">Installa app</a></li>
+                        <li><a href="#"><i class="far fa-arrow-alt-circle-down"></i></a><a class="hide" href="#">Installa app</a></li>
                     </ul>
                     <ul>
-                        <li><img src="./img/profile.svg" alt=""><a href="#">John Doe</a></li>
+                        <li><a href="#"><img src="./img/profile.svg" alt=""></a><a class="hide" href="#">John Doe</a></li>
                     </ul>
                 </div>    
                 
@@ -60,8 +64,9 @@
             <!-- content -->
             <div class="content">
                 <header>
-                    
+                    <a href="#"><div class="btm">EFFETUA L'UPGRADE</div></a>
                 </header>
+                <!-- navigation -->
                 <menu>
                     <ul>
                         <li><a href="#">In Evidenza</a></li>
