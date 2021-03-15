@@ -226,10 +226,20 @@ footer .titel{
 }
 .line{
     width: 240px;
-    background-color: white;
+    background-color:#6f7176;
     height: 3px;
     border-radius: 5px;
     margin:10px 20px;
+    position: relative;
+}
+.line::after{
+    content: "";
+    width: 40%;
+    height: 100%;
+    background-color:white ;
+    position: absolute;
+    top:0;
+    left:0;
 }
 footer .center{
     align-items: center;
@@ -240,9 +250,6 @@ footer .center{
     align-content: center;
     justify-content: center;
 }
-footer .right .line{
-    width: 100px;
-    margin-right: 0;
-}
+
 
 
