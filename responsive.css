@@ -19,7 +19,19 @@
         footer .left p{
             padding-bottom: 4px;
             font-size: 10px;
+            
         }
+        footer .left a{
+            text-transform:none;
+            font-size: 10px;
+            
+        }
+        footer .left a:hover,
+        footer .left a:active,
+        footer .left a:focus{
+            text-decoration: underline;
+        }
+        
         footer i{
             color:#6f7176;
             font-size: 12px;
@@ -30,11 +42,23 @@
             color:white;
             font-size: 12px;
             margin-left: 5px;
-        }
-        footer .center i:nth-child(3){
-            font-size: 20px;
             vertical-align: middle;
         }
+        footer .center a:nth-child(3) i{
+            font-size: 20px;
+            width: 28px;
+        }
+        footer .center a:nth-child(3):hover i,
+        footer .center a:nth-child(3):active i,
+        footer .center a:nth-child(3):focus i{
+            font-size: 28px;
+        }
+        .icons{
+            height: 30px;
+            text-align: center;
+            line-height: 30px;
+        }
+       
         
         footer .left p:first-child{
             color: white;
@@ -48,11 +72,25 @@
         footer .titel{
             margin-left: 10px;
         }
+        .container-line{
+            width:140px ;
+            height: 10px;
+            margin:0 5px;
+            position: relative;
+        }
         .line{
-            width: 140px;
+            width:140px;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+           
+        }
+        footer .right .container-line{
+            width: 60px;
+            margin-right: 0;
         }
         footer .right .line{
-            width: 60px;
+            width:100%;
             margin-right: 0;
         }
         
@@ -84,8 +122,12 @@
         width: 50px;
     
     }
-    footer .left p{
+    footer .left p {
         padding-bottom: 4px;
+        font-size: 12px;
+    }
+    footer .left a{
+        text-transform:none;
         font-size: 12px;
     }
     footer i{
@@ -102,23 +144,37 @@
     footer .center{
         padding:0 20px;
     }
+    .container-line{
+        width:240px ;
+        margin:0 20px;
+    }
     .line{
         width: 240px;
+        
     }
-    footer .center i,
+    footer .center a i,
     footer .right i{
         color:white;
         font-size: 16px;
         margin-left: 10px;
         vertical-align: middle;
     }
-    footer .center i:nth-child(3){
+    footer .center a:nth-child(3) i{
         font-size: 24px;
+        width: 32px;
     }
-    footer .right .line{
-        width: 100px;
-        margin-right: 0;
+    footer .center a:nth-child(3):hover i,
+    footer .center a:nth-child(3):active i,
+    footer .center a:nth-child(3):focus i{
+        font-size: 32px;
     }
+    .icons{
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+    }
+    
+    
 }
 
 /* lg */

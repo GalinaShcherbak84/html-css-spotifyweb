@@ -12,6 +12,11 @@ a{
     text-transform: uppercase;
     font-size: 14px;
 }
+a:hover,
+a:focus,
+a:active{
+    color:white;
+}
 p{
     color:#6f7176;
     font-weight: bold;
@@ -82,7 +87,7 @@ main{
 .sidebar ul h4{
     padding-bottom: 0;
 }
-.sidebar ul li span{
+.playlist ul li span{
     display: inline-block;
     font-size: 30px;
     line-height: 30px;
@@ -106,11 +111,24 @@ main{
 .sidebar ul a{
     text-transform: none;
 }
-.sidebar ul li a img{
+
+.sidebar ul li a .img{
     height: 30px;
-    margin-right: 5px;
-    fill:#6f7176;
+    height: 30px;
+    background-color: black;
     stroke: #6f7176;
+    fill:#6f7176;
+    background-image: url(./img/home.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right: 5px;
+}
+.sidebar ul li:nth-child(2) a .img{
+    background-image: url(./img/search.svg);
+}
+.sidebar ul li:nth-child(3) a .img{
+    background-image: url(./img/libreria.svg);
 }
 .sidebar ul li i{
     font-size: 30px;
@@ -215,6 +233,9 @@ footer .right{
 footer .titel{
     text-align: left;
 }
+footer .left a:hover i{
+    color:white;
+}
 .progress{
     display: flex;
     align-items: center;
@@ -224,12 +245,12 @@ footer .titel{
     color:white;
     font-size: 10px;
 }
+
 .line{
-    width: 240px;
+    width:100%;
     background-color:#6f7176;
     height: 3px;
     border-radius: 5px;
-    margin:10px 20px;
     position: relative;
 }
 .line::after{
@@ -240,6 +261,25 @@ footer .titel{
     position: absolute;
     top:0;
     left:0;
+    border-radius: 5px ;
+
+}
+.around{
+    width: 10px;
+    height: 10px;
+    background-color: white;
+    position: absolute;
+    top:50%;
+    left:38%;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    display: none;
+    z-index: 3;
+}
+.progress a:hover .around,
+.progress a:active .around,
+.progress a:focus .around{
+    display: block;
 }
 footer .center{
     align-items: center;
@@ -250,6 +290,8 @@ footer .center{
     align-content: center;
     justify-content: center;
 }
-
+ a:hover .line::after{
+    background-color:yellowgreen;
+}
 
 
