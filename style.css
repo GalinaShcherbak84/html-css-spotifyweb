@@ -53,33 +53,7 @@ main{
     overflow-y: hidden;
     
 }
-.container-btm{
-    width: 240px;
-    height: 50px;
-    text-align: center;
-    margin-right: 20px;
-    position: relative;
-}
-.btm{
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    color:white;
-    font-size: 14px;
-    border:solid 1px white;
-    border-radius:30px;
-    position: absolute;
-    top:50%;
-    left:50%;
-    transform: translate(-50%,-50%);
-}
-.content a:hover .btm{
-    font-size: 16px;
-    width: 240px;
-    height: 50px;
-    line-height: 50px;
-}
+
 
 /* sidebar */
 .sidebar{
@@ -196,7 +170,37 @@ header{
     align-items: center;
     z-index: 4;
 }
-
+.container-btm{
+    width: 240px;
+    height: 50px;
+    text-align: center;
+    margin-right: 20px;
+    position: relative;
+}
+.btm{
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color:white;
+    font-size: 14px;
+    border:solid 1px white;
+    border-radius:30px; 
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    transition: font-size .3s,
+                width .3s,
+                height .3s,
+                line-height .3s;
+}
+.content a:hover .btm{
+    font-size: 16px;
+    width: 240px;
+    height: 50px;
+    line-height: 50px;
+}
 menu {
     padding-top: 80px;
 }
@@ -343,8 +347,45 @@ footer .left a:hover i{
     top:0;
     left:0;
     border-radius: 5px ;
-
+    transition: width 4s;
 }
+a:hover .line::after,
+a:focus .line::after,
+a:active .line::after{
+   background-color:yellowgreen;
+}
+.line.anim::after{
+    width: 0;
+    animation: moove 25s linear /* infinite */forwards;
+    
+}
+@keyframes moove {
+    0% {
+        width: 0;
+
+    }
+    100%{
+        width: 100%;
+    }
+}
+.center .around{
+    position: absolute;
+    top:50%;
+    left:0;
+    transform: translateY(-50%);
+    animation: moove1 25s linear /* infinite */forwards;
+    display: block;
+}
+@keyframes moove1 {
+    0% {
+        left: 0;
+        
+    }
+    100%{
+        left: 100%;
+    }
+}
+
 .around{
     width: 10px;
     height: 10px;
@@ -371,10 +412,6 @@ footer .center{
     align-content: center;
     justify-content: center;
 }
- a:hover .line::after,
- a:focus .line::after,
- a:active .line::after{
-    background-color:yellowgreen;
-}
+
 
 
