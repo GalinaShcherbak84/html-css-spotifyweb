@@ -165,7 +165,7 @@ main{
     border-bottom: solid 1px #6f7176;
 }
 .container-side{
-    height: calc(100% - 110px);
+    height: calc(100% - 102px);
 }
 .top{
     height:100%;
@@ -175,7 +175,7 @@ main{
 
 /* account */
 .account{
-    height: 80px;
+    height: 102px;
     width: 100%;
 }
 .account ul{
@@ -195,8 +195,30 @@ header{
     justify-content: flex-end;
     align-items: center;
 }
+
 menu {
     padding-top: 80px;
+}
+menu ul li{
+    height: 23px;
+}
+menu ul li a{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+menu ul li div{
+    width:40%;
+    height: 3px;
+    background-color: yellowgreen;
+    border-radius: 5px;
+    margin-top: 2px;
+    display: none;
+}
+menu ul li a:hover div,
+menu ul li a:focus div,
+menu ul li a:active div{
+    display: block;
 }
 section{
     padding: 10px;
