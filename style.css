@@ -382,7 +382,7 @@ a:active .line::after{
         
     }
     100%{
-        left: 100%;
+        left: calc(100% - 10px);
     }
 }
 
