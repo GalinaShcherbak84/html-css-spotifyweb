@@ -12,6 +12,10 @@
         .hide{
             display: none;
         }
+        .immagin{
+            margin-right: 0;
+            text-align: center;
+        }
         footer .left img{
             width: 20px;
         
@@ -107,7 +111,10 @@
         display: none;
     }
     
-    
+    .immagin{
+        margin-right: 5px;
+        text-align: left;
+    }
 }
     
 

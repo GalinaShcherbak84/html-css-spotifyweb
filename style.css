@@ -66,7 +66,6 @@ main{
 
 /* sidebar */
 .sidebar{
-
     padding:20px;
     flex-shrink: 0;
     height: calc(100vh - 80px);
@@ -99,31 +98,38 @@ main{
     text-align: center;
     color:black;
 }
+.playlist ul li a:hover span,
+.playlist ul li a:active span,
+.playlist ul li a:focus span{
+    background-color: white;
+}
     
 .sidebar ul li{
     margin:14px 0;
+   list-style: none;
+   
+}
+.sidebar ul li a {
     display: flex;
     align-items: center;
-    
-    
 }
 
 .sidebar ul a{
     text-transform: none;
 }
-
-.sidebar ul li a .img{
-    height: 30px;
-    height: 30px;
-    background-color: black;
+.immagin{
+    width:30px;
+    fill: #6f7176;
     stroke: #6f7176;
-    fill:#6f7176;
-    background-image: url(./img/home.svg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     margin-right: 5px;
 }
+.sidebar ul a:focus .immagin,
+.sidebar ul a:hover .immagin,
+.sidebar ul a:active .immagin{
+    fill: white;
+    stroke: white;
+}
+
 .sidebar ul li:nth-child(2) a .img{
     background-image: url(./img/search.svg);
 }
