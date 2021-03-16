@@ -194,6 +194,7 @@ header{
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    z-index: 4;
 }
 
 menu {
@@ -256,8 +257,43 @@ section>p{
 }
 .cella img{
     width: 100%;
-     ;
 }
+.cella .immagine{
+    position: relative;
+}
+.cella .immagine i{
+    font-size: 40px;
+    color: white;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .5s;
+}
+.cella a:hover .immagine i{
+    opacity: 100%;
+}
+.cella .immagine::after{
+    content: "";
+    background-color:rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 97.5%;
+    position: absolute;
+    top:0;
+    left: 0;
+    z-index: 1;
+    opacity: 0;
+    transition: opacity .3s;
+}
+.artisti .cella .immagine::after{
+    border-radius: 50%;
+}
+.cella a:hover .immagine::after{
+    opacity: 100%;
+}
+
 /* footer */
 footer{
     width: 100%;
@@ -335,7 +371,9 @@ footer .center{
     align-content: center;
     justify-content: center;
 }
- a:hover .line::after{
+ a:hover .line::after,
+ a:focus .line::after,
+ a:active .line::after{
     background-color:yellowgreen;
 }
 
